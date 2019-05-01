@@ -150,3 +150,19 @@ footer {
     padding: 1rem;
 }
 
+.background-image {
+    align-items: center;
+    background: #ccc url('../images/volkswagen.jpg') 0 0 no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 420px;
+    margin-bottom: 1rem;
+    width: 619px;
+}
+
+.background-image .highlight {
+    background-color: yellow;
+    height: auto;
+    padding: 8px;
+}
