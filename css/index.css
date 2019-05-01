@@ -152,7 +152,7 @@ footer {
 
 .background-image {
     align-items: center;
-    background: #ccc url('../images/volkswagen.jpg') 0 0 no-repeat;
+    background: #ccc url('../images/volkswagen.jpg') center center no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -165,4 +165,39 @@ footer {
     background-color: yellow;
     height: auto;
     padding: 8px;
+}
+
+.no-background-image {
+    height: 420px;
+    position: relative;
+    width: 619px;
+}
+
+.no-background-image .fixed-image {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+.no-background-image .overlay {
+    background-color: black;
+    position: absolute;
+    opacity: 0.75;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 500;
+}
+
+.no-background-image .highlight {
+    background-color: yellow;
+    height: auto;
+    padding: 8px;
+    position: relative;
+    z-index: 100;
 }
