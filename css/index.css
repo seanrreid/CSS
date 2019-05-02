@@ -50,26 +50,49 @@ img {
     width: 100%;
 }
 
+/* Grid Styles */
+
+/* Class to highlight grid boxes */
+.item {
+    border: dashed 1px gray;
+    padding: 0.5rem;
+}
+/* end item */
+
 .wrapper {
+    display: grid;
+    height: 100%;
     margin: 0 auto;
+    min-height: 81vh;
     max-width: 90rem;
+    grid-template-columns: 30% 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0.5rem;
 }
 
-/* This is using BEM Syntax */
-.wrapper--image {
-    margin: auto;
-    max-width: 20rem;
+.sidebar {
+    grid-row: 1 / span 2;
+    grid-column: 1 / 1;
 }
 
-.code {
-    background-color: lightgray;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.85rem;
-    margin: 4px 0;
-    padding: 2px;
+.main-content {
+    grid-row: 1 / 2;
+    grid-column: 2 / span 2;
 }
 
-footer {
+.subcontent-1 {
+    grid-row: 2 / 2;
+    grid-column: 2 / 3;
+}
+
+.subcontent-2 {
+    grid-row: 2 / 2;
+    grid-column: 3 / 3;
+}
+
+/* End Grid */
+
+.site-footer {
     background-color: darkgray;
     color: white;
     margin: 2rem 0 0;

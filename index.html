@@ -9,79 +9,46 @@
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-        <header class="header">
-            <h1>Getting Started with CSS</h1>
-        </header>
-        <main>
+            <header class="item site-header">
+                <h1>CSS Grid</h1>
+            </header>
             <div class="wrapper">
-                <h2>Notes:</h2>
+            <aside class="item sidebar">
+                <h3>Sidebar</h3>
                 <ul>
-                    <li>User Agent Stylesheets: Browsers gonna browser...</li>
-                    <li>Order matters, recent rules override prior rules.</li>
-                    <li>Specificity FTW! It can override <em>everything</em></li>
-                    <li>Selectors read from left->right</li>
-                    <li>TRBL: Top Right Bottom Left
-                        <ul>
-                            <span class="code">{ padding: 14px 8px 16px 8px; }</span>
-                        </ul>
-                    </li>
-                    <li>Selector Fight!
-                        <ul>Element Selectors vs Class Selectors vs IDs</ul>
-                    </li>
+                    <li>Row 1 of 2</li> 
+                    <li>Column 1 of 3</li>
+                    <li>Spans 2 rows</li>
                 </ul>
-                <hr/>
-                <h3>The CSS Box Model</h3>
-                    <p>How big is the container?</p>
-                    <ul>
-                        <li>Margin</li>
-                        <li>Border</li>
-                        <li>Padding</li>
-                        <li>Content</li>
-                    </ul>
-                <div class="wrapper--image">
-                    <!-- <img> is a self closing tag. -->
-                    <img src="images/css-box-model.png" />
-                </div>
-                <hr/>
-                <h3>Cheats:</h3>
+            </aside>
+            <main class="item main-content">
+                <h2>Main Content</h2>
                 <ul>
-                    <li>
-                        <a href="https://type-scale.com/" target="_blank">Type Scale</a>
-                    </li>
-                    <li>
-                        <a href="https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/" target="_blank">Inheriting box-sizing Probably Slightly Better Best-Practice</a>
-                    </li>
-                    <li>
-                        <a href="https://css-tricks.com/snippets/css/system-font-stack/" target="_blank">System Font Stack on CSS-Tricks</a>
-                    </li>
-                    <li>
-                        <a href="https://css-tricks.com/rems-ems/" target="_blank">Font Size Idea: px at the Root, rem for Components, em for Text Elements</a>
-                    </li>
+                    <li>Row 1 of 2</li> 
+                    <li>Column 2 of 3</li>
+                    <li>Spans 2 columns</li>
                 </ul>
-                <p>Further Reading:</p>
+                <p>I seriously can't tell y'all how blown away I am at the ability to achive this layout with CSS Grid</p>
+                <p>Simply put, this is a serious <em>GAME CHANGER</em> that I think I'll start using in all my projects moving forward</p>
+                <p>Flexbox was good, this is <strong>GREAT!</strong></p>
+            </main>
+            <div class="item subcontent-1">
+                <h4>Subcontent 1</h4>
                 <ul>
-                    <li>
-                        <a href="https://css-tricks.com/bem-101/" target="_blank">BEM 101</a>
-                    </li>
-                    <li>
-                        <a href="https://internetingishard.com/html-and-css/css-box-model/#content-padding-border-and-margin" target="_blank">CSS Box Model @ Interneting is Hard</a>
-                    </li>
+                    <li>Row 2 of 2</li>
+                    <li>Column 2 of 3</li>
                 </ul>
-                
             </div>
-        </main>
-        <footer>
-            <h4>Scooby Dooby Doo, where are you? We got some work to do now!</h4>
-            <h5>Scooby Dooby Doo, where are you? We need some help from you now</h5>
-        </footer>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-            ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+            <div class="item subcontent-2">
+                <h4>Subcontent 2</h4>
+                <ul>
+                    <li>Row 2 of 2</li>
+                    <li>Column 3 of 3</li>
+                </ul>
+            </div>
+        </div>
+            <footer class="item site-footer">
+                Source: <a href="https://mozilladevelopers.github.io/playground/css-grid">https://mozilladevelopers.github.io/playground/css-grid</a>
+            </footer>
     </body>
 </html>
