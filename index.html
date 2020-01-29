@@ -1,21 +1,25 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <title>Working with CSS</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Stylesheet Link -->
-        <link rel="stylesheet" href="css/index.css">
-    </head>
-    <body>
-        <header class="header">
-            <h1>Getting Started with CSS</h1>
-        </header>
-        <main>
-            <div class="wrapper">
-                <h2>Notes:</h2>
+
+<head>
+    <meta charset="utf-8">
+    <title>Working with CSS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Stylesheet Link -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Getting Started with CSS (this is an H1)</h1>
+    </header>
+    <main>
+        <div class="wrapper">
+            <section>
+                <h2>Section 1 (this is an h2)</h2>
                 <ul>
+                    <li>THIS IS AN UNORDERED LIST</li>
                     <li>User Agent Stylesheets: Browsers gonna browser...</li>
                     <li>Order matters, recent rules override prior rules.</li>
                     <li>Specificity FTW! It can override <em>everything</em></li>
@@ -29,59 +33,92 @@
                         <ul>Element Selectors vs Class Selectors vs IDs</ul>
                     </li>
                 </ul>
-                <hr/>
-                <h3>The CSS Box Model</h3>
-                    <p>How big is the container?</p>
+                <hr />
+                <ol>
+                    <li>THIS LIST IS ORDERED</li>
+                    <li>See?</li>
+                    <li>The numbers increment!</li>
+                </ol>
+            </section>
+            <section>
+                <h2>Section 2</h2>
+                <h3>Display Properties (this is an h3)</h3>
+                <ul>
+                    <li>Inline: Default behavior for elements (it's usually reset to "block" by browsers*).
+                        <ul>
+                            <li>Doesn't break the flow, stays inline</li>
+                            <li>Margin and Padding can be applied</li>
+                            <li>Height and Width <em>are ignored</em></li>
+                        </ul>
+                    </li>
+                    <li>Inline-Block: Similar to inline but it respects width and height values.</li>
+                    <li>Block: Are not inline, more like "stacked." If a width isn't set, they'll take up the full width
+                        by default</li>
+                </ul>
+                <p>
+                    * <strong>USER AGENT STYLESHEETS: </strong>
                     <ul>
-                        <li>Margin</li>
-                        <li>Border</li>
-                        <li>Padding</li>
-                        <li>Content</li>
+                        <li>The browsers defaults, which can be both good and bad. It depends. 😁 </li>
+                        <li>If you're missing the &lt;!DOCTYPE&gt; declaration, the browser will give preference to the
+                            UA!</li>
                     </ul>
+                </p>
+            </section>
+            <section>
+                <h2>Section 3</h2>
+                <h3>The CSS Box Model (this is an h3)</h3>
+                <p>How big is the container?</p>
+                <ul>
+                    <li>Margin</li>
+                    <li>Border</li>
+                    <li>Padding</li>
+                    <li>Content</li>
+                </ul>
                 <div class="wrapper--image">
                     <!-- <img> is a self closing tag. -->
                     <img src="images/css-box-model.png" />
                 </div>
-                <hr/>
+            </section>
+            <section>
                 <h3>Cheats:</h3>
                 <ul>
                     <li>
                         <a href="https://type-scale.com/" target="_blank">Type Scale</a>
                     </li>
                     <li>
-                        <a href="https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/" target="_blank">Inheriting box-sizing Probably Slightly Better Best-Practice</a>
+                        <a href="https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/"
+                            target="_blank">Inheriting box-sizing Probably Slightly Better Best-Practice</a>
                     </li>
                     <li>
-                        <a href="https://css-tricks.com/snippets/css/system-font-stack/" target="_blank">System Font Stack on CSS-Tricks</a>
+                        <a href="https://css-tricks.com/snippets/css/system-font-stack/" target="_blank">System Font
+                            Stack
+                            on CSS-Tricks</a>
                     </li>
                     <li>
-                        <a href="https://css-tricks.com/rems-ems/" target="_blank">Font Size Idea: px at the Root, rem for Components, em for Text Elements</a>
+                        <a href="https://css-tricks.com/rems-ems/" target="_blank">Font Size Idea: px at the Root, rem
+                            for
+                            Components, em for Text Elements</a>
                     </li>
                 </ul>
+            </section>
+            <aside>
                 <p>Further Reading:</p>
                 <ul>
                     <li>
                         <a href="https://css-tricks.com/bem-101/" target="_blank">BEM 101</a>
                     </li>
                     <li>
-                        <a href="https://internetingishard.com/html-and-css/css-box-model/#content-padding-border-and-margin" target="_blank">CSS Box Model @ Interneting is Hard</a>
+                        <a href="https://internetingishard.com/html-and-css/css-box-model/#content-padding-border-and-margin"
+                            target="_blank">CSS Box Model @ Interneting is Hard</a>
                     </li>
                 </ul>
-                
-            </div>
-        </main>
-        <footer>
-            <h4>Scooby Dooby Doo, where are you? We got some work to do now!</h4>
-            <h5>Scooby Dooby Doo, where are you? We need some help from you now</h5>
-        </footer>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <h4>Scooby Dooby Doo, where are you? We got some work to do now!</h4>
+        <h5>Scooby Dooby Doo, where are you? We need some help from you now</h5>
+    </footer>
+</body>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-            ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    </body>
 </html>
