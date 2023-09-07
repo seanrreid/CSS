@@ -1,3 +1,3 @@
-# CSS Lessons for Digital Crafts
+# CSS Lessons
 
 Check the branches for updates!
