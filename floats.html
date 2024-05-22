@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>Working with CSS | Floats</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Stylesheet Link -->
+        <link rel="stylesheet" href="css/index.css">
+        <style>
+            .outer {
+                border: 5px dotted rgb(214,129,137);
+                border-radius: 5px;
+                width: 450px;
+                padding: 10px;
+                margin-bottom: 40px;
+            }
+
+            .float {
+                padding: 10px;
+                border: 5px solid rgba(214,129,137,.4);
+                border-radius: 5px;
+                background-color: rgba(233,78,119,.4);
+                color: #fff;
+                float: left;  
+                width: 200px;
+                margin: 0 20px 0 0;
+            }
+
+            .overflow {
+                overflow: auto;
+            }
+        </style>
+    </head>
+    <body class="floats">
+        <header class="header">
+            <h1>Totes Floats</h1>
+        </header>
+        <main>
+            <div class="wrapper">
+                <section>
+                    <h2>Floated: plenty of text</h2>
+                    <div class="outer">
+                        <div class="float">I am a floated element.</div>
+                        I am text inside the outer box. If there is enough text then the text will wrap around the floated element. The border on the outer will then wrap around the text.
+                    </div>
+                </section>
+                <section>
+                    <h2>Floated: not enough text</h2>
+                    <div class="outer">
+                        <div class="float">I am a floated element.</div>
+                        I am text inthe outer box. 
+                    </div>
+                </section>
+                <section>
+                    <h2>Floated: with a BFC</h2>
+                    <div class="outer overflow">
+                        <div class="float">I am a floated element.</div>
+                        The outer has overflow: auto.
+                    </div>
+                </section>
+                <section>
+                    <a href="https://css-tricks.com/all-about-floats/#article-header-id-3" target="_blank">CSS-Tricks: All About Floats</a>
+                    <blockquote>
+                        One of the more bewildering things about working with floats is how they can affect the element that contains them (their "parent" element). If this parent element contained nothing but floated elements, the height of it would literally collapse to nothing. This isn't always obvious if the parent doesn't contain any visually noticeable background, but it is important to be aware of.
+                    </blockquote>
+                    <div class="wrapper--image">
+                        <img src="images/collapse.png"/>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>Float demo taken from <a href="https://www.smashingmagazine.com/2017/12/understanding-css-layout-block-formatting-context/">this fantastic Smashing Magazine Article</a></p>
+        </footer>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+            ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>
