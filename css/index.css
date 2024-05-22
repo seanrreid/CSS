@@ -1,4 +1,4 @@
-/* This used to be the best practice 
+/* This used to be the best practice
 * {
     box-sizing: border-box;
 } */
@@ -19,10 +19,15 @@ html {
 
 /* System Fonts as used by GitHub */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  margin: 0;
-  padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
+    padding: 0;
+    background-color: rgb(28, 26, 26);
+    color: white;
+}
+
+a {
+    color: hotpink;
 }
 
 h1,
